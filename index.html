@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Über die SG Versbachtal – Geschichte, Stammvereine, Vorstand und Trainer." />
+  <title>Über die SGV | SG Versbachtal</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Extra styles for this page */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 8px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--color-accent), rgba(255,215,0,0.1));
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.75rem;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      border: 2px solid var(--color-primary-dark);
+      box-shadow: 0 0 0 3px rgba(255,215,0,0.2);
+    }
+    .timeline-year {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--color-accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+    .timeline-item h4 {
+      font-size: 1rem;
+      color: var(--color-primary-dark);
+      margin-bottom: 4px;
+    }
+    .timeline-item p {
+      font-size: 0.88rem;
+      color: var(--color-gray);
+      line-height: 1.6;
+    }
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 0.82rem;
+      color: var(--color-gray);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    @media (max-width: 768px) {
+      .stat-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+  <nav class="navbar scrolled" role="navigation" aria-label="Hauptnavigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand" aria-label="Zurück zur Startseite">
+        <img src="images/logo-placeholder.svg" alt="SGV Logo" class="nav-logo" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">SG Versbachtal</span>
+          <span class="nav-brand-year">Seit 1993</span>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#aktuelles">Aktuelles</a></li>
+        <li><a href="index.html#mannschaften">Mannschaften</a></li>
+        <li><a href="index.html#spielplan">Spielplan</a></li>
+        <li><a href="index.html#infrastruktur">Infrastruktur</a></li>
+        <li><a href="die-sgv.html" aria-current="page" style="color:var(--color-accent)">Über uns</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a href="index.html#mitglied" class="nav-cta">Mitglied werden</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-nav" aria-label="Mobile Navigation">
+    <a href="index.html#aktuelles">📰 Aktuelles</a>
+    <a href="index.html#mannschaften">⚽ Mannschaften</a>
+    <a href="index.html#spielplan">📅 Spielplan</a>
+    <a href="index.html#infrastruktur">🏟️ Infrastruktur</a>
+    <a href="die-sgv.html">🏆 Über uns</a>
+    <a href="index.html#kontakt">📍 Kontakt</a>
+    <a href="index.html#mitglied" class="nav-cta">Mitglied werden</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Startseite</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <span>Über die SGV</span>
+      </nav>
+      <h1>Über die SG Versbachtal</h1>
+      <p>Gemeinschaft, Geschichte und die Leidenschaft für den Fußball seit 1993.</p>
+    </div>
+  </div>
+
+  <!-- ÜBER UNS -->
+  <section class="page-section" id="ueber-uns">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start">
+
+        <div class="content-prose fade-in">
+          <h2>Wer sind wir?</h2>
+          <p>
+            Die SG Versbachtal ist eine Spielgemeinschaft, gegründet im Jahr 1993, die aus den beiden Vereinen des
+            Versbachtals entstanden ist. Als Zusammenschluss der Dörfer Weipoltshausen und Altenvers steht die SGV
+            für gelebte Dorfgemeinschaft und echten Amateurfußball mit Herz.
+          </p>
+          <p>
+            Im hessischen Amateurfußball nimmt die SG Versbachtal eine vorbildliche Funktion ein: Die Kooperation
+            zwischen zwei eigenständigen Dorfvereinen zeigt, dass gemeinsamer Einsatz, gegenseitiger Respekt und
+            eine klare Struktur der Schlüssel zu nachhaltigem Vereinserfolg sind.
+          </p>
+          <p>
+            Mit zwei aktiven Mannschaften, modernen Sportstätten und einem starken Ehrenamt ist die SG Versbachtal
+            fest in der Region verwurzelt – und ein Ort, an dem Fußball noch so gespielt wird, wie er am schönsten ist:
+            leidenschaftlich, bodenständig, gemeinschaftlich.
+          </p>
+        </div>
+
+        <div class="fade-in fade-in-delay-1">
+          <div class="stat-row" style="margin-top:0">
+            <div class="stat-item">
+              <div class="stat-number">1993</div>
+              <div class="stat-label">Gegründet</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Mannschaften</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Stammvereine</div>
+            </div>
+          </div>
+
+          <div class="timeline" style="margin-top:2rem">
+            <div class="timeline-item">
+              <p class="timeline-year">1993</p>
+              <h4>Gründung der SG Versbachtal</h4>
+              <p>Zusammenschluss der Fußballvereine aus Weipoltshausen und Altenvers.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-year">2000er</p>
+              <h4>Ausbau der Infrastruktur</h4>
+              <p>Modernisierung der Sportstätten, Bau des Kunstrasenplatzes.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-year">Heute</p>
+              <h4>Stabiler Amateurfußball</h4>
+              <p>Zwei aktive Mannschaften, starkes Vereinsleben und vorbildliche Kooperation.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STAMMVEREINE -->
+  <section class="page-section" id="stammvereine" style="background:var(--color-light)">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Die Ursprünge</span>
+        <h2 class="section-title">Unsere Stammvereine</h2>
+        <p class="section-subtitle">Die SG Versbachtal ist das Ergebnis einer vorbildlichen Partnerschaft zweier Dörfer.</p>
+      </div>
+
+      <div class="vereine-grid fade-in">
+        <div class="verein-card">
+          <h3><span>🏘️</span> SV Weipoltshausen</h3>
+          <p>
+            Der Fußballverein aus Weipoltshausen ist einer der beiden Gründungsvereine der Spielgemeinschaft.
+            Das Dorf im Versbachtal bringt seine Tradition, seinen Zusammenhalt und seine Spieler in die
+            gemeinsame Mannschaft ein.
+          </p>
+        </div>
+        <div class="verein-card">
+          <h3><span>🏘️</span> SV Altenvers</h3>
+          <p>
+            Altenvers ist der zweite Stammverein der SG Versbachtal. Die Kooperation beider Vereine ist seit
+            der Gründung 1993 ein Beispiel dafür, wie ländliche Gemeinschaften durch Sport zusammenwachsen
+            und sich gegenseitig stärken können.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VORSTAND -->
+  <section class="page-section" id="vorstand">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Das Führungsteam</span>
+        <h2 class="section-title">Vorstand</h2>
+        <p class="section-subtitle">Der Vorstand der SG Versbachtal sorgt ehrenamtlich für einen reibungslosen Vereinsbetrieb.</p>
+      </div>
+
+      <div class="people-grid">
+
+        <div class="person-card fade-in">
+          <div class="person-avatar" aria-hidden="true">👤</div>
+          <h4>Sven Pölkemann</h4>
+          <p class="person-role">1. Vorsitzender</p>
+        </div>
+
+        <div class="person-card fade-in fade-in-delay-1">
+          <div class="person-avatar" aria-hidden="true">👤</div>
+          <h4>Platzhalter Name</h4>
+          <p class="person-role">2. Vorsitzender</p>
+        </div>
+
+        <div class="person-card fade-in fade-in-delay-2">
+          <div class="person-avatar" aria-hidden="true">👤</div>
+          <h4>Platzhalter Name</h4>
+          <p class="person-role">Kassenwart</p>
+        </div>
+
+        <div class="person-card fade-in fade-in-delay-3">
+          <div class="person-avatar" aria-hidden="true">👤</div>
+          <h4>Platzhalter Name</h4>
+          <p class="person-role">Schriftführer/in</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINER -->
+  <section class="page-section" id="trainer" style="background:var(--color-light)">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Trainerstab</span>
+        <h2 class="section-title">Unsere Trainer</h2>
+        <p class="section-subtitle">Erfahrene Trainer, die das Beste aus jedem Spieler herausholen.</p>
+      </div>
+
+      <div class="people-grid">
+
+        <div class="person-card fade-in" id="mannschaft-1">
+          <div class="person-avatar" aria-hidden="true">🎽</div>
+          <h4>Platzhalter Name</h4>
+          <p class="person-role">Trainer 1. Mannschaft</p>
+        </div>
+
+        <div class="person-card fade-in fade-in-delay-1">
+          <div class="person-avatar" aria-hidden="true">🎽</div>
+          <h4>Platzhalter Name</h4>
+          <p class="person-role">Co-Trainer 1. Mannschaft</p>
+        </div>
+
+        <div class="person-card fade-in fade-in-delay-2" id="mannschaft-2">
+          <div class="person-avatar" aria-hidden="true">🎽</div>
+          <h4>Platzhalter Name</h4>
+          <p class="person-role">Trainer 2. Mannschaft</p>
+        </div>
+
+        <div class="person-card fade-in fade-in-delay-3">
+          <div class="person-avatar" aria-hidden="true">🎽</div>
+          <h4>Platzhalter Name</h4>
+          <p class="person-role">Co-Trainer 2. Mannschaft</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="images/logo-placeholder.svg" alt="SG Versbachtal" class="footer-logo" />
+          <div>
+            <p class="footer-brand-name">SG Versbachtal</p>
+            <p class="footer-brand-slogan">»...meine Heimat ...mein Verein«</p>
+          </div>
+        </div>
+        <p class="footer-description">Spielgemeinschaft aus Weipoltshausen und Altenvers. Amateurfußball mit Herz seit 1993.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/sgversbachtal/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">📸</a>
+          <a href="https://www.facebook.com/search/top?q=sg%20versbachtal" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook">👍</a>
+          <a href="mailto:sg-versbachtal@gmail.com" class="footer-social-btn" aria-label="E-Mail">✉️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Verein</h4>
+        <ul>
+          <li><a href="die-sgv.html">Über die SGV</a></li>
+          <li><a href="die-sgv.html#vorstand">Vorstand</a></li>
+          <li><a href="die-sgv.html#stammvereine">Stammvereine</a></li>
+          <li><a href="index.html#mitglied">Mitglied werden</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Teams</h4>
+        <ul>
+          <li><a href="index.html#mannschaften">1. Mannschaft</a></li>
+          <li><a href="index.html#mannschaften">2. Mannschaft</a></li>
+          <li><a href="index.html#spielplan">Spielplan</a></li>
+          <li><a href="index.html#infrastruktur">Sportstätten</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© <span class="copyright-year">2025</span> SG Versbachtal · Weipoltshausen &amp; Altenvers</p>
+      <div class="footer-legal-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

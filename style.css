@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SG Versbachtal – Spielgemeinschaft aus Weipoltshausen und Altenvers. Amateurfußball mit Herz seit 1993." />
+  <meta property="og:title" content="SG Versbachtal – ...meine Heimat ...mein Verein" />
+  <meta property="og:description" content="Spielgemeinschaft aus Weipoltshausen und Altenvers. Amateurfußball seit 1993." />
+  <meta property="og:type" content="website" />
+  <title>SG Versbachtal | ...meine Heimat ...mein Verein</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVIGATION
+     ══════════════════════════════════════════ -->
+<header>
+  <nav class="navbar" role="navigation" aria-label="Hauptnavigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand" aria-label="SG Versbachtal Startseite">
+        <img src="images/logo-placeholder.svg" alt="SGV Logo" class="nav-logo" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">SG Versbachtal</span>
+          <span class="nav-brand-year">Seit 1993</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#aktuelles">Aktuelles</a></li>
+        <li><a href="#mannschaften">Mannschaften</a></li>
+        <li><a href="#spielplan">Spielplan</a></li>
+        <li><a href="#infrastruktur">Infrastruktur</a></li>
+        <li><a href="die-sgv.html">Über uns</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#mitglied" class="nav-cta">Mitglied werden</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="#aktuelles">📰 Aktuelles</a>
+    <a href="#mannschaften">⚽ Mannschaften</a>
+    <a href="#spielplan">📅 Spielplan</a>
+    <a href="#infrastruktur">🏟️ Infrastruktur</a>
+    <a href="die-sgv.html">🏆 Über uns</a>
+    <a href="#kontakt">📍 Kontakt</a>
+    <a href="#mitglied" class="nav-cta">Mitglied werden</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ══════════════════════════════════════════
+     HERO
+     ══════════════════════════════════════════ -->
+<section id="hero" aria-label="Willkommen bei der SG Versbachtal">
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-logo-wrap">
+      <img src="images/logo-placeholder.svg" alt="SG Versbachtal Wappen" />
+    </div>
+
+    <p class="hero-tagline">Amateurfußball ✦ Weipoltshausen & Altenvers</p>
+
+    <h1 class="hero-title">
+      SG Versbachtal
+      <span>Fußball mit Herz.</span>
+    </h1>
+
+    <p class="hero-slogan">»...meine Heimat &nbsp;...mein Verein«</p>
+    <p class="hero-since">⚽ Spielgemeinschaft seit 1993</p>
+
+    <div class="hero-buttons">
+      <a href="#aktuelles" class="btn btn-primary">Mehr erfahren</a>
+      <a href="#mitglied" class="btn btn-outline">Mitglied werden</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">Scroll</div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     AKTUELLES / NEWS
+     ══════════════════════════════════════════ -->
+<section id="aktuelles" aria-labelledby="aktuelles-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Neuigkeiten</span>
+      <h2 class="section-title" id="aktuelles-heading">Aktuelles</h2>
+      <p class="section-subtitle">Die neuesten Nachrichten, Spielberichte und Ankündigungen aus dem Vereinsleben.</p>
+    </div>
+
+    <div class="news-grid">
+
+      <article class="news-card fade-in fade-in-delay-1">
+        <div class="news-card-image" aria-hidden="true">
+          <span class="news-badge">Spielbericht</span>
+          <span class="news-icon">⚽</span>
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span>📅 März 2025</span>
+            <span>👤 Redaktion SGV</span>
+          </div>
+          <h3>Starker Auftritt der 1. Mannschaft im Heimspiel</h3>
+          <p>Mit einem überzeugenden 3:1-Sieg gegen den TSV Nachbarort hat die 1. Mannschaft der SG Versbachtal ihre Tabellenposition gefestigt und begeisterte die heimischen Fans.</p>
+          <a href="#" class="news-read-more">Weiterlesen →</a>
+        </div>
+      </article>
+
+      <article class="news-card fade-in fade-in-delay-2">
+        <div class="news-card-image" aria-hidden="true">
+          <span class="news-badge">Vereinsnews</span>
+          <span class="news-icon">🏆</span>
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span>📅 Februar 2025</span>
+            <span>👤 Vorstand</span>
+          </div>
+          <h3>Jahreshauptversammlung 2025 – Alle Ergebnisse</h3>
+          <p>Bei der diesjährigen Jahreshauptversammlung wurde der Vorstand bestätigt und wichtige Beschlüsse für die kommende Saison gefasst. Wir berichten über alle Highlights des Abends.</p>
+          <a href="#" class="news-read-more">Weiterlesen →</a>
+        </div>
+      </article>
+
+      <article class="news-card fade-in fade-in-delay-3">
+        <div class="news-card-image" aria-hidden="true">
+          <span class="news-badge">Training</span>
+          <span class="news-icon">🏃</span>
+        </div>
+        <div class="news-card-body">
+          <div class="news-meta">
+            <span>📅 Januar 2025</span>
+            <span>👤 Trainerstab</span>
+          </div>
+          <h3>Vorbereitung auf die Rückrunde läuft auf Hochtouren</h3>
+          <p>Die Wintervorbereitung ist in vollem Gange: Neue Trainingseinheiten, Fitness-Tests und zwei Testspiele stehen auf dem Programm. Alle Infos zum Trainingsplan der Rückrunde.</p>
+          <a href="#" class="news-read-more">Weiterlesen →</a>
+        </div>
+      </article>
+
+    </div><!-- /news-grid -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     MANNSCHAFTEN
+     ══════════════════════════════════════════ -->
+<section id="mannschaften" aria-labelledby="mannschaften-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Unsere Teams</span>
+      <h2 class="section-title" id="mannschaften-heading">Die Mannschaften</h2>
+      <p class="section-subtitle">Zwei Teams, ein Verein, ein Ziel – gemeinsam für die SG Versbachtal.</p>
+    </div>
+
+    <div class="teams-grid">
+
+      <article class="team-card fade-in fade-in-delay-1">
+        <div class="team-card-header">
+          <span class="team-number" aria-hidden="true">1</span>
+          <div class="team-badge">⚽</div>
+          <h3>1. Mannschaft</h3>
+          <p>Erste Herren</p>
+        </div>
+        <div class="team-card-body">
+          <div class="team-accent-bar"></div>
+          <div class="team-info-grid">
+            <div class="team-info-item">
+              <span class="team-info-label">Liga</span>
+              <span class="team-info-value">Kreisliga</span>
+            </div>
+            <div class="team-info-item">
+              <span class="team-info-label">Saison</span>
+              <span class="team-info-value">2024/25</span>
+            </div>
+            <div class="team-info-item">
+              <span class="team-info-label">Trainer</span>
+              <span class="team-info-value">Placeholder</span>
+            </div>
+            <div class="team-info-item">
+              <span class="team-info-label">Training</span>
+              <span class="team-info-value">Di & Do 18:30</span>
+            </div>
+          </div>
+          <a href="die-sgv.html#mannschaft-1" class="btn btn-secondary" style="width:100%;justify-content:center;">Zum Team →</a>
+        </div>
+      </article>
+
+      <article class="team-card fade-in fade-in-delay-2">
+        <div class="team-card-header">
+          <span class="team-number" aria-hidden="true">2</span>
+          <div class="team-badge">⚽</div>
+          <h3>2. Mannschaft</h3>
+          <p>Zweite Herren</p>
+        </div>
+        <div class="team-card-body">
+          <div class="team-accent-bar"></div>
+          <div class="team-info-grid">
+            <div class="team-info-item">
+              <span class="team-info-label">Liga</span>
+              <span class="team-info-value">Kreisklasse</span>
+            </div>
+            <div class="team-info-item">
+              <span class="team-info-label">Saison</span>
+              <span class="team-info-value">2024/25</span>
+            </div>
+            <div class="team-info-item">
+              <span class="team-info-label">Trainer</span>
+              <span class="team-info-value">Placeholder</span>
+            </div>
+            <div class="team-info-item">
+              <span class="team-info-label">Training</span>
+              <span class="team-info-value">Mi 18:30</span>
+            </div>
+          </div>
+          <a href="die-sgv.html#mannschaft-2" class="btn btn-secondary" style="width:100%;justify-content:center;">Zum Team →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SPIELPLAN
+     ══════════════════════════════════════════ -->
+<section id="spielplan" aria-labelledby="spielplan-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Saison 2025/26</span>
+      <h2 class="section-title" id="spielplan-heading">Spielplan &amp; Termine</h2>
+      <p class="section-subtitle">Alle Heim- und Auswärtsspiele auf einen Blick. Kommt und unterstützt eure SGV!</p>
+    </div>
+
+    <div class="spielplan-filter fade-in">
+      <button class="filter-btn active" data-filter="all">Alle Spiele</button>
+      <button class="filter-btn" data-filter="1m">1. Mannschaft</button>
+      <button class="filter-btn" data-filter="2m">2. Mannschaft</button>
+    </div>
+
+    <div class="spielplan-table-wrap fade-in">
+      <table class="spielplan-table" aria-label="Spielplan SG Versbachtal">
+        <thead>
+          <tr>
+            <th scope="col">Datum</th>
+            <th scope="col">Mannschaft</th>
+            <th scope="col">Heim</th>
+            <th scope="col">Gast</th>
+            <th scope="col">Ergebnis</th>
+            <th scope="col">Ort</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-team="1m" class="spiel-heimspiel">
+            <td><span class="spiel-datum">09.08.2025</span><br><span class="spiel-uhrzeit">15:00 Uhr</span></td>
+            <td><span class="mannschaft-tag tag-1m">1. M.</span></td>
+            <td><strong>SG Versbachtal</strong></td>
+            <td>FC Musterstadt</td>
+            <td><span class="spiel-result win">3 : 1</span></td>
+            <td>Heimspiel</td>
+          </tr>
+          <tr data-team="2m">
+            <td><span class="spiel-datum">10.08.2025</span><br><span class="spiel-uhrzeit">13:00 Uhr</span></td>
+            <td><span class="mannschaft-tag tag-2m">2. M.</span></td>
+            <td>SV Beispieldorf</td>
+            <td><strong>SG Versbachtal</strong></td>
+            <td><span class="spiel-result draw">2 : 2</span></td>
+            <td>Auswärts</td>
+          </tr>
+          <tr data-team="1m">
+            <td><span class="spiel-datum">16.08.2025</span><br><span class="spiel-uhrzeit">16:00 Uhr</span></td>
+            <td><span class="mannschaft-tag tag-1m">1. M.</span></td>
+            <td>TSV Waldheim</td>
+            <td><strong>SG Versbachtal</strong></td>
+            <td><span class="spiel-result loss">1 : 0</span></td>
+            <td>Auswärts</td>
+          </tr>
+          <tr data-team="1m" class="spiel-heimspiel">
+            <td><span class="spiel-datum">23.08.2025</span><br><span class="spiel-uhrzeit">15:00 Uhr</span></td>
+            <td><span class="mannschaft-tag tag-1m">1. M.</span></td>
+            <td><strong>SG Versbachtal</strong></td>
+            <td>VfL Bergdorf</td>
+            <td><span class="spiel-result win">2 : 0</span></td>
+            <td>Heimspiel</td>
+          </tr>
+          <tr data-team="2m" class="spiel-heimspiel">
+            <td><span class="spiel-datum">24.08.2025</span><br><span class="spiel-uhrzeit">13:00 Uhr</span></td>
+            <td><span class="mannschaft-tag tag-2m">2. M.</span></td>
+            <td><strong>SG Versbachtal</strong></td>
+            <td>FC Talheim</td>
+            <td><span class="spiel-result win">4 : 2</span></td>
+            <td>Heimspiel</td>
+          </tr>
+          <tr data-team="1m" class="spiel-heimspiel">
+            <td><span class="spiel-datum">05.04.2026</span><br><span class="spiel-uhrzeit">15:30 Uhr</span></td>
+            <td><span class="mannschaft-tag tag-1m">1. M.</span></td>
+            <td><strong>SG Versbachtal</strong></td>
+            <td>SV Feldkirchen</td>
+            <td><span class="spiel-result upcoming">Anpfiff</span></td>
+            <td>Heimspiel</td>
+          </tr>
+          <tr data-team="2m">
+            <td><span class="spiel-datum">06.04.2026</span><br><span class="spiel-uhrzeit">13:00 Uhr</span></td>
+            <td><span class="mannschaft-tag tag-2m">2. M.</span></td>
+            <td>TSG Wiesbach</td>
+            <td><strong>SG Versbachtal</strong></td>
+            <td><span class="spiel-result upcoming">Anpfiff</span></td>
+            <td>Auswärts</td>
+          </tr>
+          <tr data-team="1m">
+            <td><span class="spiel-datum">12.04.2026</span><br><span class="spiel-uhrzeit">15:00 Uhr</span></td>
+            <td><span class="mannschaft-tag tag-1m">1. M.</span></td>
+            <td>FC Steinbach</td>
+            <td><strong>SG Versbachtal</strong></td>
+            <td><span class="spiel-result upcoming">Anpfiff</span></td>
+            <td>Auswärts</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     INFRASTRUKTUR
+     ══════════════════════════════════════════ -->
+<section id="infrastruktur" aria-labelledby="infra-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Sportstätten</span>
+      <h2 class="section-title" id="infra-heading">Unsere Infrastruktur</h2>
+      <p class="section-subtitle">Moderne Sportstätten für Training und Wettkampf – alles was der Fußball braucht.</p>
+    </div>
+
+    <div class="infra-grid">
+
+      <article class="infra-card fade-in fade-in-delay-1">
+        <div class="infra-image rasen" aria-hidden="true">
+          <span class="infra-badge">Hauptplatz</span>
+          <span class="infra-icon">🌿</span>
+        </div>
+        <div class="infra-body">
+          <h3>Rasenplatz</h3>
+          <p>Unser gepflegter Naturrasenplatz bietet optimale Bedingungen für Meisterschaftsspiele und intensives Training. Der Platz erfüllt alle Anforderungen des Kreisfußballverbandes.</p>
+          <div class="infra-features">
+            <span class="infra-feature-tag">Hauptspielfeld</span>
+            <span class="infra-feature-tag">Tribüne</span>
+            <span class="infra-feature-tag">Flutlicht</span>
+            <span class="infra-feature-tag">Kabinen</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="infra-card fade-in fade-in-delay-2">
+        <div class="infra-image kunstrasen" aria-hidden="true">
+          <span class="infra-badge">Trainingsplatz</span>
+          <span class="infra-icon">⚽</span>
+        </div>
+        <div class="infra-body">
+          <h3>Kunstrasenplatz</h3>
+          <p>Der moderne Kunstrasenplatz ermöglicht ganzjähriges Training – unabhängig von Wetter und Jahreszeit. Ideal für Technikübungen, Konditionstraining und Kleinfeldbetrieb.</p>
+          <div class="infra-features">
+            <span class="infra-feature-tag">Ganzjährig nutzbar</span>
+            <span class="infra-feature-tag">Flutlicht</span>
+            <span class="infra-feature-tag">Wetterfest</span>
+            <span class="infra-feature-tag">Kleinfeld</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     SPONSOREN
+     ══════════════════════════════════════════ -->
+<section id="sponsoren" aria-labelledby="sponsoren-heading">
+  <div class="container">
+    <div class="section-header centered fade-in">
+      <span class="section-label">Partner</span>
+      <h2 class="section-title" id="sponsoren-heading">Unsere Sponsoren</h2>
+      <p class="section-subtitle">Wir danken unseren Sponsoren und Partnern, die den Verein tatkräftig unterstützen.</p>
+    </div>
+
+    <div class="sponsor-grid fade-in">
+      <div class="sponsor-card">
+        <span class="sponsor-placeholder-icon">🏢</span>
+        <span class="sponsor-placeholder-text">Ihr Firmenlogo hier</span>
+      </div>
+      <div class="sponsor-card">
+        <span class="sponsor-placeholder-icon">🏢</span>
+        <span class="sponsor-placeholder-text">Ihr Firmenlogo hier</span>
+      </div>
+      <div class="sponsor-card">
+        <span class="sponsor-placeholder-icon">🏢</span>
+        <span class="sponsor-placeholder-text">Ihr Firmenlogo hier</span>
+      </div>
+      <div class="sponsor-card">
+        <span class="sponsor-placeholder-icon">🏢</span>
+        <span class="sponsor-placeholder-text">Ihr Firmenlogo hier</span>
+      </div>
+      <div class="sponsor-card">
+        <span class="sponsor-placeholder-icon">🏢</span>
+        <span class="sponsor-placeholder-text">Ihr Firmenlogo hier</span>
+      </div>
+      <div class="sponsor-card">
+        <span class="sponsor-placeholder-icon">🏢</span>
+        <span class="sponsor-placeholder-text">Ihr Firmenlogo hier</span>
+      </div>
+    </div>
+
+    <div class="sponsor-cta fade-in">
+      <h3>Werden Sie Sponsor der SG Versbachtal!</h3>
+      <p>Unterstützen Sie den Amateurfußball in der Region und profitieren Sie von attraktiven Werbemöglichkeiten rund ums Vereinsleben.</p>
+      <a href="mailto:sg-versbachtal@gmail.com?subject=Sponsoring%20Anfrage" class="btn btn-secondary">Sponsoring-Anfrage senden</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     MITGLIED WERDEN
+     ══════════════════════════════════════════ -->
+<section id="mitglied" aria-labelledby="mitglied-heading">
+  <div class="container">
+    <div class="mitglied-wrap">
+
+      <div class="fade-in">
+        <span class="section-label">Mitmachen</span>
+        <h2 class="section-title" id="mitglied-heading">Mitglied werden</h2>
+        <p class="section-subtitle">Werde Teil der SG Versbachtal-Familie! Ob aktiver Spieler oder förderndes Mitglied – jeder ist bei uns willkommen.</p>
+
+        <div class="mitglied-benefits">
+          <div class="benefit-item">
+            <div class="benefit-icon">⚽</div>
+            <div class="benefit-text">
+              <h4>Aktiv spielen</h4>
+              <p>Trainiere mit uns und tritt in der Mannschaft an</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🤝</div>
+            <div class="benefit-text">
+              <h4>Gemeinschaft erleben</h4>
+              <p>Teil einer starken Vereinsgemeinschaft werden</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🏟️</div>
+            <div class="benefit-text">
+              <h4>Infrastruktur nutzen</h4>
+              <p>Voller Zugang zu unseren modernen Sportstätten</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">❤️</div>
+            <div class="benefit-text">
+              <h4>Heimat unterstützen</h4>
+              <p>Den Verein und die Region langfristig stärken</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in fade-in-delay-1">
+        <form
+          name="mitglied"
+          id="mitglied-form"
+          class="mitglied-form"
+          action="/"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          novalidate
+        >
+          <input type="hidden" name="form-name" value="mitglied" />
+          <div hidden>
+            <label>Nicht ausfüllen: <input name="bot-field" /></label>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vorname">Vorname *</label>
+              <input type="text" id="vorname" name="vorname" required placeholder="Max" autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label for="nachname">Nachname *</label>
+              <input type="text" id="nachname" name="nachname" required placeholder="Mustermann" autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-Mail-Adresse *</label>
+            <input type="email" id="email" name="email" required placeholder="max@beispiel.de" autocomplete="email" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+49 170 123456" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="geburtsdatum">Geburtsdatum</label>
+              <input type="date" id="geburtsdatum" name="geburtsdatum" autocomplete="bday" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mitgliedschaft">Art der Mitgliedschaft *</label>
+            <select id="mitgliedschaft" name="mitgliedschaft" required>
+              <option value="" disabled selected>Bitte wählen…</option>
+              <option value="aktiv">Aktives Mitglied (spielend)</option>
+              <option value="passiv">Förderndes Mitglied</option>
+              <option value="familie">Familienmitgliedschaft</option>
+              <option value="jugend">Jugendmitglied (unter 18)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="nachricht">Nachricht (optional)</label>
+            <textarea id="nachricht" name="nachricht" placeholder="Haben Sie Fragen oder Anmerkungen?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:14px 28px;">
+            Jetzt Mitglied werden →
+          </button>
+
+          <p class="form-note">
+            * Pflichtfelder. Mit dem Absenden stimmen Sie zu, dass Ihre Daten zur Bearbeitung Ihrer Anfrage verwendet werden.
+            Weitere Informationen finden Sie in unserer <a href="datenschutz.html" style="color:rgba(255,215,0,0.7);">Datenschutzerklärung</a>.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     KONTAKT
+     ══════════════════════════════════════════ -->
+<section id="kontakt" aria-labelledby="kontakt-heading">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Reach us</span>
+      <h2 class="section-title" id="kontakt-heading">Kontakt</h2>
+      <p class="section-subtitle">Haben Sie Fragen? Nehmen Sie gern Kontakt auf – wir freuen uns auf Ihre Nachricht!</p>
+    </div>
+
+    <div class="kontakt-grid">
+
+      <div class="kontakt-info fade-in">
+        <div class="kontakt-item">
+          <div class="kontakt-icon" aria-hidden="true">👤</div>
+          <div class="kontakt-item-text">
+            <h4>1. Vorsitzender</h4>
+            <p>Sven Pölkemann</p>
+          </div>
+        </div>
+        <div class="kontakt-item">
+          <div class="kontakt-icon" aria-hidden="true">📍</div>
+          <div class="kontakt-item-text">
+            <h4>Adresse</h4>
+            <p>Berliner Str. 43<br>35102 Lohra</p>
+          </div>
+        </div>
+        <div class="kontakt-item">
+          <div class="kontakt-icon" aria-hidden="true">📞</div>
+          <div class="kontakt-item-text">
+            <h4>Telefon</h4>
+            <a href="tel:+4917770780802">0177 / 770 7802</a>
+          </div>
+        </div>
+        <div class="kontakt-item">
+          <div class="kontakt-icon" aria-hidden="true">✉️</div>
+          <div class="kontakt-item-text">
+            <h4>E-Mail</h4>
+            <a href="mailto:sg-versbachtal@gmail.com">sg-versbachtal@gmail.com</a>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-gray);margin-bottom:0.75rem;">Folgt uns</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/sgversbachtal/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              📸 Instagram
+            </a>
+            <a href="https://www.facebook.com/search/top?q=sg%20versbachtal" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              👍 Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in fade-in-delay-1">
+        <div class="kontakt-map">
+          <div class="map-placeholder" role="img" aria-label="Kartenplatzhalter – Region Lohra, Hessen">
+            <span class="map-placeholder-icon">🗺️</span>
+            <p>Lohra, 35102 – Hessen</p>
+          </div>
+          <p class="map-address">
+            📍 SG Versbachtal · Berliner Str. 43, 35102 Lohra
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="images/logo-placeholder.svg" alt="SG Versbachtal" class="footer-logo" />
+          <div>
+            <p class="footer-brand-name">SG Versbachtal</p>
+            <p class="footer-brand-slogan">»...meine Heimat ...mein Verein«</p>
+          </div>
+        </div>
+        <p class="footer-description">
+          Spielgemeinschaft aus Weipoltshausen und Altenvers. Amateurfußball mit Herz und Leidenschaft seit 1993.
+        </p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/sgversbachtal/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">📸</a>
+          <a href="https://www.facebook.com/search/top?q=sg%20versbachtal" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook">👍</a>
+          <a href="mailto:sg-versbachtal@gmail.com" class="footer-social-btn" aria-label="E-Mail">✉️</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Verein</h4>
+        <ul>
+          <li><a href="die-sgv.html">Über die SGV</a></li>
+          <li><a href="die-sgv.html#vorstand">Vorstand</a></li>
+          <li><a href="die-sgv.html#stammvereine">Stammvereine</a></li>
+          <li><a href="#mitglied">Mitglied werden</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Teams</h4>
+        <ul>
+          <li><a href="#mannschaften">1. Mannschaft</a></li>
+          <li><a href="#mannschaften">2. Mannschaft</a></li>
+          <li><a href="#spielplan">Spielplan</a></li>
+          <li><a href="#infrastruktur">Sportstätten</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#sponsoren">Sponsoren</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© <span class="copyright-year">2025</span> SG Versbachtal · Weipoltshausen &amp; Altenvers</p>
+      <div class="footer-legal-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

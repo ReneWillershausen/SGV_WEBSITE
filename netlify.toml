@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Impressum | SG Versbachtal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar scrolled" role="navigation" aria-label="Hauptnavigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand" aria-label="Zurück zur Startseite">
+        <img src="images/logo-placeholder.svg" alt="SGV Logo" class="nav-logo" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">SG Versbachtal</span>
+          <span class="nav-brand-year">Seit 1993</span>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#aktuelles">Aktuelles</a></li>
+        <li><a href="index.html#mannschaften">Mannschaften</a></li>
+        <li><a href="index.html#spielplan">Spielplan</a></li>
+        <li><a href="die-sgv.html">Über uns</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+        <li><a href="index.html#mitglied" class="nav-cta">Mitglied werden</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-nav" aria-label="Mobile Navigation">
+    <a href="index.html#aktuelles">📰 Aktuelles</a>
+    <a href="index.html#mannschaften">⚽ Mannschaften</a>
+    <a href="index.html#spielplan">📅 Spielplan</a>
+    <a href="die-sgv.html">🏆 Über uns</a>
+    <a href="index.html#kontakt">📍 Kontakt</a>
+    <a href="index.html#mitglied" class="nav-cta">Mitglied werden</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Startseite</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <span>Impressum</span>
+      </nav>
+      <h1>Impressum</h1>
+      <p>Angaben gemäß § 5 TMG und § 55 RStV</p>
+    </div>
+  </div>
+
+  <section class="page-section">
+    <div class="container" style="max-width:800px">
+      <div class="content-prose fade-in">
+
+        <h2>Angaben gemäß § 5 TMG</h2>
+
+        <h3>Betreiber dieser Website</h3>
+        <p>
+          <strong>SG Versbachtal</strong><br />
+          vertreten durch den 1. Vorsitzenden: Sven Pölkemann<br />
+          Berliner Str. 43<br />
+          35102 Lohra
+        </p>
+
+        <h3>Kontakt</h3>
+        <p>
+          Telefon: <a href="tel:+4917770780802">0177 / 770 7802</a><br />
+          E-Mail: <a href="mailto:sg-versbachtal@gmail.com">sg-versbachtal@gmail.com</a>
+        </p>
+
+        <h3>Vereinsregister</h3>
+        <p>
+          Eingetragener Verein (e. V.)<br />
+          Registergericht: [Amtsgericht – bitte nachtragen]<br />
+          Registernummer: [VR XXXXX – bitte nachtragen]
+        </p>
+
+        <h3>Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV</h3>
+        <p>
+          Sven Pölkemann<br />
+          Berliner Str. 43<br />
+          35102 Lohra
+        </p>
+
+        <h2>Haftungsausschluss</h2>
+
+        <h3>Haftung für Inhalte</h3>
+        <p>
+          Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den
+          allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+          verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen
+          zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+        </p>
+        <p>
+          Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen
+          Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt
+          der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
+          Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+        </p>
+
+        <h3>Haftung für Links</h3>
+        <p>
+          Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben.
+          Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+          verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+        </p>
+        <p>
+          Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
+          Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche
+          Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht
+          zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+        </p>
+
+        <h3>Urheberrecht</h3>
+        <p>
+          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
+          Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+          Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+          Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+        </p>
+        <p>
+          Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter
+          beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine
+          Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
+          Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+        </p>
+
+        <h2>Online-Streitbeilegung</h2>
+        <p>
+          Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+          <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">
+            https://ec.europa.eu/consumers/odr
+          </a>
+        </p>
+        <p>
+          Unsere E-Mail-Adresse finden Sie oben im Impressum. Wir sind nicht bereit oder verpflichtet, an
+          Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="images/logo-placeholder.svg" alt="SG Versbachtal" class="footer-logo" />
+          <div>
+            <p class="footer-brand-name">SG Versbachtal</p>
+            <p class="footer-brand-slogan">»...meine Heimat ...mein Verein«</p>
+          </div>
+        </div>
+        <p class="footer-description">Spielgemeinschaft aus Weipoltshausen und Altenvers. Amateurfußball mit Herz seit 1993.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="die-sgv.html">Über die SGV</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+          <li><a href="index.html#mitglied">Mitglied werden</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html" aria-current="page">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:sg-versbachtal@gmail.com">E-Mail schreiben</a></li>
+          <li><a href="tel:+4917770780802">0177 / 770 7802</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© <span class="copyright-year">2025</span> SG Versbachtal · Weipoltshausen &amp; Altenvers</p>
+      <div class="footer-legal-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
