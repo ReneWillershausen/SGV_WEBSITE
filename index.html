@@ -19,10 +19,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--ink);o
 a{text-decoration:none;color:inherit}ul{list-style:none}img{max-width:100%;display:block}
 
 /* TICKER */
-.ticker{background:var(--blue);color:#fff;padding:8px 0;overflow:hidden;white-space:nowrap}
-.ticker-inner{display:inline-flex;animation:tick 26s linear infinite}
-.ti{font-size:.75rem;font-weight:500;letter-spacing:.05em;padding:0 2rem;border-right:1px solid rgba(255,255,255,.2)}
-@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ticker-wrap{background:var(--blue);overflow:hidden;white-space:nowrap;padding:0;position:relative;border-bottom:2px solid var(--gold)}
+.ticker-track{display:inline-flex;align-items:stretch;animation:ticker-scroll 40s linear infinite;will-change:transform}
+.ticker-track:hover{animation-play-state:paused}
+.t-item{display:inline-flex;align-items:center;gap:8px;padding:9px 28px;font-size:.75rem;font-weight:600;letter-spacing:.06em;color:rgba(255,255,255,.92);border-right:1px solid rgba(255,255,255,.15);white-space:nowrap;cursor:default}
+.t-item.t-news{color:#fff;background:rgba(255,215,0,.12)}
+.t-item.t-score .t-val{font-family:'Bebas Neue',sans-serif;font-size:.95rem;letter-spacing:.06em;color:var(--gold);margin:0 4px}
+.t-item.t-ig{cursor:pointer;transition:.2s}.t-item.t-ig:hover{background:rgba(255,255,255,.1)}
+.t-sep{display:inline-flex;align-items:center;padding:0 6px;color:rgba(255,215,0,.6);font-size:.8rem}
+@keyframes ticker-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(max-width:480px){.t-item{padding:8px 18px;font-size:.7rem}}
 
 /* NAV */
 nav{background:var(--white);border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:300}
@@ -121,6 +127,21 @@ section{padding:60px 0}
 .lr-team.away{text-align:right}
 .lr-num{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:.04em;color:var(--blue);line-height:1}
 .lr-sep{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--muted)}
+
+
+/* NEWS GRID */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.news-card{background:var(--white);border:1px solid var(--rule);border-radius:12px;overflow:hidden;transition:.2s;display:flex;flex-direction:column}
+.news-card:hover{border-color:var(--blue);box-shadow:0 4px 16px rgba(0,51,153,.08)}
+.nc-img{height:160px;background:linear-gradient(135deg,var(--blue),var(--accent));display:flex;align-items:center;justify-content:center;font-size:2.5rem;flex-shrink:0}
+.nc-body{padding:1rem 1.1rem 1.2rem;flex:1;display:flex;flex-direction:column}
+.nc-cat{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:.4rem}
+.nc-title{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.04em;color:var(--ink);margin-bottom:.4rem;line-height:1.1}
+.nc-text{font-size:.84rem;color:var(--muted);font-weight:300;line-height:1.6;flex:1;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.nc-date{font-size:.68rem;color:var(--muted);margin-top:.8rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.news-empty{grid-column:1/-1;text-align:center;padding:3rem 1rem;border:1.5px dashed var(--rule);border-radius:12px}
+@media(max-width:768px){.news-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.news-grid{grid-template-columns:1fr}}
 
 /* FUSSBALL.DE WIDGET SECTION */
 #spielplan{background:var(--white)}
@@ -388,30 +409,10 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:3rem 0 1.5rem}
 </head>
 <body>
 
-<!-- INFO BAR -->
-<div class="infobar">
-  <div class="infobar-inner">
-    <div class="ib-item ib-claim">
-      <span class="ib-heart">❤️</span>
-      <span>...meine Heimat &nbsp;...mein Verein</span>
-    </div>
-    <div class="ib-divider"></div>
-    <div class="ib-item">
-      <span class="ib-label">1. Mannschaft</span>
-      <span class="ib-match">SG Versbachtal – SG Mornsh/Erdh/Frohnh</span>
-      <span class="ib-result ib-pending">So. 29.03. · 15:00 · Auswärts</span>
-    </div>
-    <div class="ib-divider"></div>
-    <div class="ib-item">
-      <span class="ib-label">2. Mannschaft</span>
-      <span class="ib-match">SG Mornsh/Erdh/Frohnh II – SG Versbachtal II</span>
-      <span class="ib-result ib-pending">So. 29.03. · 13:00 · Auswärts</span>
-    </div>
-    <div class="ib-divider"></div>
-    <a href="https://www.instagram.com/sgversbachtal/" target="_blank" rel="noopener" class="ib-item ib-ig">
-      <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor;flex-shrink:0"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-      <span>@sgversbachtal</span>
-    </a>
+<!-- TICKER -->
+<div class="ticker-wrap" id="tickerWrap">
+  <div class="ticker-track" id="tickerTrack">
+    <!-- filled by JS -->
   </div>
 </div>
 
@@ -491,6 +492,23 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:3rem 0 1.5rem}
           </div>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- AKTUELLE BEITRÄGE -->
+<section id="aktuelles" style="background:var(--off);padding:48px 0">
+  <div class="container">
+    <div class="section-rule fi">
+      <h2>Aktuelles</h2>
+      <span class="rule-tag">Vereinsnews</span>
+    </div>
+    <div id="newsGrid" class="news-grid fi">
+      <!-- filled by JS -->
+      <div class="news-empty" id="newsEmpty">
+        <span style="font-size:2rem;opacity:.3">📰</span>
+        <p style="color:var(--muted);font-size:.9rem;font-weight:300;margin-top:.5rem">Noch keine Beiträge — kommt bald!</p>
+      </div>
     </div>
   </div>
 </section>
@@ -760,49 +778,125 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:3rem 0 1.5rem}
     </div>
     <div class="foot-bottom">
       <p class="foot-copy">© 2025 SG Versbachtal · Weipoltshausen &amp; Altenvers</p>
-      <div class="foot-legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+      <div class="foot-legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="admin.html" style="opacity:.35;font-size:.68rem">Admin</a></div>
     </div>
   </div>
 </footer>
 
 <script>
-// Hamburger
+// ── STORAGE KEY ─────────────────────────────────────────────────────────
+const NS = 'sgv_news_v1';
+
+// ── NEWS STORAGE ─────────────────────────────────────────────────────────
+function getPosts() {
+  try { return JSON.parse(localStorage.getItem(NS) || '[]'); } catch(e){ return []; }
+}
+function savePosts(posts) {
+  localStorage.setItem(NS, JSON.stringify(posts));
+}
+
+// ── RENDER NEWS ───────────────────────────────────────────────────────────
+const EMOJIS = {'Vereinsnews':'📰','Spielbericht':'⚽','Termin':'📅','Ankündigung':'📣','Sonstiges':'💬'};
+function renderNews() {
+  const grid = document.getElementById('newsGrid');
+  const empty = document.getElementById('newsEmpty');
+  const posts = getPosts();
+  // remove old cards
+  grid.querySelectorAll('.news-card').forEach(c => c.remove());
+  if (posts.length === 0) {
+    if (empty) empty.style.display = '';
+    return;
+  }
+  if (empty) empty.style.display = 'none';
+  // newest first
+  [...posts].reverse().forEach(p => {
+    const d = new Date(p.date);
+    const dateStr = d.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'});
+    const card = document.createElement('div');
+    card.className = 'news-card';
+    card.innerHTML = `
+      <div class="nc-img">${EMOJIS[p.cat]||'📰'}</div>
+      <div class="nc-body">
+        <div class="nc-cat">${p.cat}</div>
+        <div class="nc-title">${p.title}</div>
+        <div class="nc-text">${p.text}</div>
+        <div class="nc-date">${dateStr}</div>
+      </div>`;
+    grid.insertBefore(card, empty);
+  });
+}
+
+// ── BUILD TICKER ──────────────────────────────────────────────────────────
+function buildTicker() {
+  const posts = getPosts();
+  const items = [];
+
+  // Static items
+  items.push({type:'score', label:'1. Mannschaft', text:'So. 29.03. · 15:00 · Auswärts', val:''});
+  items.push({type:'score', label:'2. Mannschaft', text:'So. 29.03. · 13:00 · Auswärts', val:''});
+  items.push({type:'ig', text:'@sgversbachtal', url:'https://www.instagram.com/sgversbachtal/'});
+  items.push({type:'plain', text:'❤️ ...meine Heimat · ...mein Verein'});
+  items.push({type:'plain', text:'📍 Lohra-Weipoltshausen · Hessen'});
+  items.push({type:'plain', text:'🏟️ Rasenplatz & Kunstrasenplatz'});
+  // Sponsor placeholders
+  items.push({type:'plain', text:'🤝 Werden Sie Sponsor! → sg-versbachtal@gmail.com'});
+
+  // Custom ticker items from admin panel
+  try {
+    const custom = JSON.parse(localStorage.getItem('sgv_ticker_v1')||'[]');
+    custom.forEach(t => items.push({type:'news', text: t.text}));
+  } catch(e){}
+
+  // Dynamic news items (last 5)
+  const recent = [...posts].reverse().slice(0,5);
+  recent.forEach(p => {
+    items.push({type:'news', text:`${EMOJIS[p.cat]||'📰'} ${p.title}`});
+  });
+
+  // Duplicate for seamless loop
+  const all = [...items, ...items];
+  const track = document.getElementById('tickerTrack');
+  if (!track) return;
+  track.innerHTML = all.map(item => {
+    if (item.type === 'score') {
+      return `<span class="t-item t-score"><span style="opacity:.6;font-size:.68rem">${item.label}</span><span class="t-val">${item.val||'·'}</span><span>${item.text}</span></span>`;
+    } else if (item.type === 'ig') {
+      return `<a class="t-item t-ig" href="${item.url}" target="_blank" rel="noopener">📸 ${item.text}</a>`;
+    } else if (item.type === 'news') {
+      return `<span class="t-item t-news">${item.text}</span>`;
+    } else {
+      return `<span class="t-item">${item.text}</span>`;
+    }
+  }).join('');
+
+  // Adjust animation speed based on item count
+  const duration = Math.max(30, all.length * 4);
+  track.style.animationDuration = duration + 's';
+}
+
+// ── HAMBURGER ─────────────────────────────────────────────────────────────
 const ham=document.getElementById('ham'),menu=document.getElementById('mobile-menu');
 if(ham&&menu){
-  ham.addEventListener('click',()=>{
-    const o=menu.classList.toggle('open');
-    ham.classList.toggle('open',o);
-    ham.setAttribute('aria-expanded',o);
-    document.body.style.overflow=o?'hidden':'';
-  });
-  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-    menu.classList.remove('open');ham.classList.remove('open');
-    ham.setAttribute('aria-expanded','false');document.body.style.overflow='';
-  }));
+  ham.addEventListener('click',()=>{const o=menu.classList.toggle('open');ham.classList.toggle('open',o);ham.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');ham.classList.remove('open');ham.setAttribute('aria-expanded','false');document.body.style.overflow='';}));
 }
-// Fade
+
+// ── FADE IN ──────────────────────────────────────────────────────────────
 const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');obs.unobserve(x.target)}}),{threshold:.08,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
-// Spielplan tabs
+
+// ── SPIELPLAN TABS (keep old tab logic if tabs still present) ─────────────
 function showTab(id,btn){
   document.querySelectorAll('.fdde-tab').forEach(b=>b.classList.remove('on'));
   btn.classList.add('on');
   document.querySelectorAll('.fdde-panels>div').forEach(d=>d.classList.remove('show'));
-  document.getElementById('tab-'+id).classList.add('show');
+  const el = document.getElementById('tab-'+id);
+  if(el) el.classList.add('show');
 }
-// Filter in main table
-document.querySelectorAll('.fdde-tab').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const id=btn.textContent.trim();
-    if(id==='Alle Spiele'){
-      document.querySelectorAll('#sp-body tr').forEach(r=>r.style.display='');
-    } else if(id==='1. Mannschaft'){
-      document.querySelectorAll('#sp-body tr').forEach(r=>r.style.display=r.dataset.t==='1m'?'':'none');
-    } else if(id==='2. Mannschaft'){
-      document.querySelectorAll('#sp-body tr').forEach(r=>r.style.display=r.dataset.t==='2m'?'':'none');
-    }
-  });
-});
+
+// ── INIT ─────────────────────────────────────────────────────────────────
+buildTicker();
+renderNews();
 </script>
 </body>
 </html>
