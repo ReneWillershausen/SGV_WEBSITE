@@ -354,26 +354,64 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:3rem 0 1.5rem}
   .people-grid{grid-template-columns:repeat(2,1fr)}
   .sv-card{gap:.9rem;padding:1.1rem}.sv-logo{width:64px;height:64px}
 }
+
+/* INFO BAR */
+.infobar{background:var(--blue);color:#fff;border-bottom:2px solid var(--gold)}
+.infobar-inner{max-width:1320px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:stretch;min-height:44px;flex-wrap:wrap}
+.ib-item{display:flex;align-items:center;gap:7px;padding:8px 14px;font-size:.78rem;font-weight:500;white-space:nowrap}
+.ib-claim{font-style:italic;font-weight:300;letter-spacing:.02em;font-size:.82rem}
+.ib-heart{font-size:1rem}
+.ib-label{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-right:2px}
+.ib-match{font-size:.78rem;font-weight:500}
+.ib-result{font-size:.72rem;font-weight:400;opacity:.7;margin-left:4px}
+.ib-pending{color:rgba(255,215,0,.8)}
+.ib-win{color:#4ade80}.ib-draw{color:rgba(255,215,0,.9)}.ib-loss{color:#f87171}
+.ib-divider{width:1px;background:rgba(255,255,255,.15);margin:8px 0;flex-shrink:0}
+.ib-ig{color:#fff;text-decoration:none;transition:.2s;gap:6px}
+.ib-ig:hover{color:var(--gold)}
+@media(max-width:900px){
+  .infobar-inner{flex-wrap:wrap;padding:4px 1rem}
+  .ib-item{padding:5px 8px;font-size:.74rem}
+  .ib-divider{display:none}
+}
+@media(max-width:600px){
+  .infobar-inner{flex-direction:column;gap:0}
+  .ib-item{padding:5px 4px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .ib-item:last-child{border-bottom:none}
+}
+
+/* SIDE BY SIDE WIDGETS */
+.widget-row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+@media(max-width:768px){.widget-row{grid-template-columns:1fr}}
 </style>
 <script type="text/javascript" src="https://www.fussball.de/widgets.js"></script>
 </head>
 <body>
 
-<!-- TICKER -->
-<div class="ticker" role="marquee" aria-label="Neuigkeiten">
-  <div class="ticker-inner">
-    <span class="ti">⚽ SG Versbachtal · Saison 2025/26</span>
-    <span class="ti">🏆 1. Mannschaft · Kreisliga Marburg-Biedenkopf</span>
-    <span class="ti">📅 Nächstes Spiel: fussball.de prüfen</span>
-    <span class="ti">📸 Folgt uns: @sgversbachtal</span>
-    <span class="ti">❤️ ...meine Heimat · ...mein Verein</span>
-    <span class="ti">📍 Lohra-Weipoltshausen · 35102 Hessen</span>
-    <span class="ti">⚽ SG Versbachtal · Saison 2025/26</span>
-    <span class="ti">🏆 1. Mannschaft · Kreisliga Marburg-Biedenkopf</span>
-    <span class="ti">📅 Nächstes Spiel: fussball.de prüfen</span>
-    <span class="ti">📸 Folgt uns: @sgversbachtal</span>
-    <span class="ti">❤️ ...meine Heimat · ...mein Verein</span>
-    <span class="ti">📍 Lohra-Weipoltshausen · 35102 Hessen</span>
+<!-- INFO BAR -->
+<div class="infobar">
+  <div class="infobar-inner">
+    <div class="ib-item ib-claim">
+      <span class="ib-heart">❤️</span>
+      <span>...meine Heimat &nbsp;...mein Verein</span>
+    </div>
+    <div class="ib-divider"></div>
+    <div class="ib-item">
+      <span class="ib-label">1. Mannschaft</span>
+      <span class="ib-match">SG Versbachtal – SG Mornsh/Erdh/Frohnh</span>
+      <span class="ib-result ib-pending">So. 29.03. · 15:00 · Auswärts</span>
+    </div>
+    <div class="ib-divider"></div>
+    <div class="ib-item">
+      <span class="ib-label">2. Mannschaft</span>
+      <span class="ib-match">SG Mornsh/Erdh/Frohnh II – SG Versbachtal II</span>
+      <span class="ib-result ib-pending">So. 29.03. · 13:00 · Auswärts</span>
+    </div>
+    <div class="ib-divider"></div>
+    <a href="https://www.instagram.com/sgversbachtal/" target="_blank" rel="noopener" class="ib-item ib-ig">
+      <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:currentColor;flex-shrink:0"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      <span>@sgversbachtal</span>
+    </a>
   </div>
 </div>
 
@@ -465,46 +503,48 @@ footer{background:var(--ink);color:rgba(255,255,255,.5);padding:3rem 0 1.5rem}
       <span class="rule-tag">Live von fussball.de</span>
     </div>
 
-    <!-- 1. Mannschaft Widget -->
-    <div class="fdde-block fi" style="margin-bottom:1.2rem">
-      <div class="fdde-widget-wrap">
-        <div class="fdde-widget-header">
-          <span class="fdde-widget-title">1. Mannschaft · Nächstes Spiel</span>
-          <span class="fdde-live-badge">Live</span>
-          <a href="https://next.fussball.de/mannschaft/-/011MIA9GC0000000VTVG0001VTR8C1K7" target="_blank" rel="noopener" class="fdde-open-btn">fussball.de →</a>
-        </div>
-        <div style="padding:1rem 1rem 0;background:var(--white)">
-          <div class="fussballde_widget"
-            data-id="db0b6d82-5f1a-45b1-ad82-b36fb7f1efb4"
-            data-type="next-match"
-            style="width:100%">
+    <div class="widget-row fi">
+      <!-- 1. Mannschaft -->
+      <div class="widget-col">
+        <div class="fdde-widget-wrap">
+          <div class="fdde-widget-header">
+            <span class="fdde-widget-title">1. Mannschaft · Nächstes Spiel</span>
+            <span class="fdde-live-badge">Live</span>
+            <a href="https://next.fussball.de/mannschaft/-/011MIA9GC0000000VTVG0001VTR8C1K7" target="_blank" rel="noopener" class="fdde-open-btn">fussball.de →</a>
           </div>
-        </div>
-        <div class="fdde-cta-bar">
-          <span class="fdde-cta-text">Daten direkt von <strong>fussball.de</strong></span>
-          <a href="https://next.fussball.de/mannschaft/-/011MIA9GC0000000VTVG0001VTR8C1K7" target="_blank" rel="noopener" class="fdde-iframe-link">Zum Mannschaftsprofil →</a>
+          <div style="padding:1rem 1rem 0;background:var(--white)">
+            <div class="fussballde_widget"
+              data-id="db0b6d82-5f1a-45b1-ad82-b36fb7f1efb4"
+              data-type="next-match"
+              style="width:100%">
+            </div>
+          </div>
+          <div class="fdde-cta-bar">
+            <span class="fdde-cta-text">Daten direkt von <strong>fussball.de</strong></span>
+            <a href="https://next.fussball.de/mannschaft/-/011MIA9GC0000000VTVG0001VTR8C1K7" target="_blank" rel="noopener" class="fdde-iframe-link">Zum Mannschaftsprofil →</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 2. Mannschaft Widget -->
-    <div class="fdde-block fi d1">
-      <div class="fdde-widget-wrap">
-        <div class="fdde-widget-header">
-          <span class="fdde-widget-title">2. Mannschaft · Nächstes Spiel</span>
-          <span class="fdde-live-badge">Live</span>
-          <a href="https://next.fussball.de/mannschaft/-/011MIBHH5O000000VTVG0001VTR8C1K7" target="_blank" rel="noopener" class="fdde-open-btn">fussball.de →</a>
-        </div>
-        <div style="padding:1rem 1rem 0;background:var(--white)">
-          <div class="fussballde_widget"
-            data-id="5499a7da-bf33-44fa-b919-cf19f14db082"
-            data-type="next-match"
-            style="width:100%">
+      <!-- 2. Mannschaft -->
+      <div class="widget-col">
+        <div class="fdde-widget-wrap">
+          <div class="fdde-widget-header">
+            <span class="fdde-widget-title">2. Mannschaft · Nächstes Spiel</span>
+            <span class="fdde-live-badge">Live</span>
+            <a href="https://next.fussball.de/mannschaft/-/011MIBHH5O000000VTVG0001VTR8C1K7" target="_blank" rel="noopener" class="fdde-open-btn">fussball.de →</a>
           </div>
-        </div>
-        <div class="fdde-cta-bar">
-          <span class="fdde-cta-text">Daten direkt von <strong>fussball.de</strong></span>
-          <a href="https://next.fussball.de/mannschaft/-/011MIBHH5O000000VTVG0001VTR8C1K7" target="_blank" rel="noopener" class="fdde-iframe-link">Zum Mannschaftsprofil →</a>
+          <div style="padding:1rem 1rem 0;background:var(--white)">
+            <div class="fussballde_widget"
+              data-id="5499a7da-bf33-44fa-b919-cf19f14db082"
+              data-type="next-match"
+              style="width:100%">
+            </div>
+          </div>
+          <div class="fdde-cta-bar">
+            <span class="fdde-cta-text">Daten direkt von <strong>fussball.de</strong></span>
+            <a href="https://next.fussball.de/mannschaft/-/011MIBHH5O000000VTVG0001VTR8C1K7" target="_blank" rel="noopener" class="fdde-iframe-link">Zum Mannschaftsprofil →</a>
+          </div>
         </div>
       </div>
     </div>
